@@ -30,6 +30,16 @@ console.log(supplyChanges);
 //    - if the value is negative, format the log as 'Removed x parts.' 
 console.log('6. Showing supplyChanges...');
 
+for (let i=0; i < supplyChanges.length; i++) {
+    console.log(supplyChanges[i]);
+if(supplyChanges[i] > 0){
+    console.log('Added');
+} else if (supplyChanges[i] === 0)
+console.log('No change');
+else if (supplyChanges[i] < 0){
+    console.log('Removed');
+ }
+}
 
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
@@ -47,3 +57,14 @@ console.log('8. Total supplies available is:');
 //    no more boxes can be filled.
 //    Then log how many boxes were filled, and how many parts are left over.
 console.log('9. Filling boxes with a "while" loop');
+
+let part = 572
+let boxes = 0 
+
+console.log('parts:', part, 'boxes:', boxes);
+
+while(part > 6) {
+    part -= 7;
+    boxes++;
+}
+console.log('parts unboxed', part, 'boxes filled:', boxes);
